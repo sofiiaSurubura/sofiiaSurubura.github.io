@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8" />
+    <title>Лабораторна робота №5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { display: flex; height: 100vh; }
+        #calculator { 
+            margin: auto; 
+            padding: 20px;
+            background: rgb(17, 17, 17);
+            box-shadow: 0 20px 20px rgb(12, 8, 80);
+            border-radius: 15px;
+
+        }
+        #display, button {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #270249;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px #10043d;
+            font: bold 3em Impact;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #display {
+            width: 450px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <div class="row">
+            <input id="display" type="text" />
+        </div>
+        <div class="row">
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('+')">+</button>
+        </div>
+        <div class="row">
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('*')">*</button>
+        </div>
+        <div class="row">
+            <button onclick="clear1()">C</button>
+            <button onclick="press('0')">0</button>
+            <button onclick="calc()">=</button>
+            <button onclick="press('/')">/</button>
+        </div>
+    </div>
+    
+    <script>
+        let display = document.getElementById("display");
+    
+        function clear1() {
+            display.value = "";
+        }
+        function calc() {
+            display.value = eval(display.value);
+        }
+        function press(x) {
+            display.value += x;
+        }
+    </script>
+</body>

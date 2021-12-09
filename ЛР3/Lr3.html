@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторна робота №3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #ffffff;
+        }
+
+        #wrapper {
+            width: 1200px;
+            margin: auto;
+            background: #f2e8c9;
+        }
+
+        #header {
+            position: relative;
+            height: 200px;
+            background-color: #9e9393;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin: 0 0 10px 40px;
+            color: #0f0258;
+            text-align: center;
+        }
+
+        .nomer {
+            position: absolute;
+            top: 5px;
+            right: 900px;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu a {
+            color: #000000;
+            font-size: 16px;
+            line-height: 36px;
+            border: 1px solid transparent;
+            padding: 10px 14px;
+            margin-top: 25px;
+            margin-left: 35px;
+            transition: all .3s;
+        }
+
+        .menu a:hover {
+            border-color: #000000;
+        }
+
+        .header__content {
+            padding: 34px 0px 23px;
+            justify-content: space-between;
+        }
+
+        .logo {
+            padding-left: 1030px;
+            margin-top: -120px;
+            color: aqua;
+        }
+
+        #content {
+            margin-bottom: 5px;
+            height: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            margin: auto;
+            text-align: center;
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+        .container {
+            width: 1180px;
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+
+        #footer {
+            height: 100px;
+            background-color: #665c5c;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .fon {
+            text-align: center;
+            top: 50px;
+            margin:20px 20px 20px 20px;
+        }
+
+
+        .row {
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+        .col {
+            margin-bottom: 5px;
+            padding-left: 1px;
+            padding-right: 1px;
+
+        }
+
+        .col>div {
+            background-color: rgb(179, 194, 211);
+            height: 100px;
+            width: auto;
+            border-radius: 2px;
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div>
+
+            </div>
+            <h1>Шапка</h1>
+            <p class="nomer"><br></p>
+            <br>
+            <br>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Головне меню</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+
+                </ul>
+                <div class="logo">
+                    <br><br>
+                    <a href="#"><img src="">Логотип</a>
+                </div>
+            </nav>
+        </div>
+    <hr width="1000" color="#037FFC" size="5">
+    </div>
+    <div id="content">
+        <a>Варіант 14</a>
+        <div class="container">
+            <div class="row grid-columns1">
+                <div class="col-sm-4 col">
+                    <div>
+                        <b></b>
+                    </div>
+                </div>
+                <div class="col-sm-4 col">
+                    <div>
+                        <b></b>
+                    </div>
+                </div>
+                <div class="col-sm-4 col">
+                    <div>
+                        <b></b>
+                        <br>
+                    </div>
+                </div>
+                <div class="row grid-columns2">
+                    <div class="col-sm-4 col">
+                        <div>
+                            <b></b>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col">
+                        <div>
+                            <b></b>
+                        </div>
+                    </div>
+                    <div class="row grid-columns3">
+                        <div class="col-md-8 col">
+                            <div>
+                                <b></b>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col">
+                            <div>
+                                <b></b>
+                            </div>
+                        </div>
+                        <div class="row grid-columns4">
+                            <div class="col-sm-4 col">
+                                <div>
+                                    <b></b>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col">
+                                <div>
+                                    <b></b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+                    crossorigin="anonymous"></script>
+                <script src="js/bootstrap-grid-columns/bootstrap-grid-columns.js"></script>
+
+                <div class="clear">
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <p class="fon"><strong>Підвал<br></strong> </p>
+            
+
+        </div>
+    </div>
+
+</body>
+
+</html>
